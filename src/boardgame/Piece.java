@@ -2,9 +2,9 @@ package boardgame;
 
 public class Piece {
     protected Position position;
-    private Boar board;
+    private Board board;
 
-    public Piece(Boar board) {
+    public Piece(Board board) {
         this.board = board;
         position = null;
     }
@@ -17,7 +17,7 @@ public class Piece {
         this.position = position;
     }
     //Only class within the package and subclass may have access to a piece board
-    protected Boar getBoard() {
+    protected Board getBoard() {
         return board;
     }
 
