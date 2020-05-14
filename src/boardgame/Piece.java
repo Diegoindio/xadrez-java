@@ -16,6 +16,7 @@ public class Piece {
     public void setPosition(Position position) {
         this.position = position;
     }
+
     //Only class within the package and subclass may have access to a piece board
     protected Board getBoard() {
         return board;

@@ -28,10 +28,17 @@ public class Board {
     }
 
     // return the piece given a row and a column
-    public Piece piece(int row, int column){
+    public Piece piece(int row, int column) {
         return pieces[row][column];
     }
-    public Piece piece(Position position){
+
+    public Piece piece(Position position) {
         return pieces[position.getRow()][position.getColumn()];
+    }
+
+    //take a matrix in the given position and assign the piece that was informed
+    public void placePiece(Piece piece, Position position) {
+        pieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
     }
 }

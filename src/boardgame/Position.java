@@ -24,9 +24,10 @@ public class Position {
     public void setColumn(int column) {
         this.column = column;
     }
+
     //print the position
     @Override
-    public String toString(){
+    public String toString() {
         return row + ", " + column;
     }
 }
